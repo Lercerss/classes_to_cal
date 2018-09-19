@@ -12,4 +12,5 @@ username
 password
 ```
 Run using command: `python3 main.py <path-to-credentials-file>`
+
 Your class schedule will be found at `./class_schedule.ics`
