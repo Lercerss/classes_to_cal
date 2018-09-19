@@ -1,4 +1,3 @@
-
 def table_to_2d_list(html_table):
     """
     Assumes table headers (<th>) are present for every column in the table
@@ -10,7 +9,7 @@ def table_to_2d_list(html_table):
     num_rows = len(t_rows)
     num_cols = sum(int(th.get('colspan', 1)) for th in t_rows[0].children)
 
-    result = [[None for _ in range(num_cols)] for _ in range(num_rows-1)]
+    result = [[None for _ in range(num_cols)] for _ in range(num_rows - 1)]
 
     for i, tr in enumerate(t_rows[1:]):
         row_cells = tr.children
